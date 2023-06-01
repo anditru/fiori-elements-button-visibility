@@ -1,0 +1,48 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds run"
+  },
+  "cds": {
+    "requires": {
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "alice": {
+              "password": "123",
+              "roles": [
+                "admin"
+              ]
+            },
+            "bob": {
+              "password": "123",
+              "roles": [
+                "admin"
+              ]
+            },
+            "charlie": {
+              "password": "123",
+              "roles": []
+            }
+          }
+        }
+      }
+    }
+  },
+  "sapux": [
+    "app/browse"
+  ]
+}
