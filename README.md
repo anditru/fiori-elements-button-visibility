@@ -1,5 +1,5 @@
-# Fiori Elements School of Magic
-In this repository, you learn how to make buttons in Fiori Elements Apps disappear.
+# Button Visibility in Fiori Elements
+This repository illustrates how to control the visibility of the Create, Edit and Delete buttons in Fiori Elements.
 
 There are two groups of annotations to control whether the buttons are visible or enabled in Fiori Elements:
  - `@UI.<Operation>Hidden` is intended to control the visibility of the buttons.
