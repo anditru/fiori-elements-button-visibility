@@ -10,9 +10,10 @@ annotate BooksService.Books with @(
     UI.UpdateHidden: updateHidden,
 
     // Delete Button
-    // UI.DeleteHidden: { $edmJson: { $Path: '/ButtonVisibility/deleteHidden' } },
-    UI.DeleteHidden: deleteHidden,
+    UI.DeleteHidden: { $edmJson: { $Path: '/ButtonVisibility/deleteHidden' } },
+    // UI.DeleteHidden: deleteHidden,
     // Capabilities.Deletable: { $edmJson: { $Path: '/ButtonVisibility/deletable' } },
+    Capabilities.Deletable: canDelete
 );
 
 // List Report

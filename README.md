@@ -5,7 +5,9 @@ There are two groups of annotations to control whether the buttons are visible o
  - `@UI.<Operation>Hidden` is intended to control the visibility of the buttons.
  - `@Capabilities.<Operation>able` is intended to control whether the buttons are enabled.
 
-Both annotations can either be bound to a field that is part of the entities displayed in the List Report to control the availability of the buttons per entity or to a field that is not part of the entities to control the visibility for all entities at once. Only the visibility of the Create button **must** be controlled via a field that is not part of the entities.
+To control the availability of the buttons on the List Report, the annotations **must** be bound to a field that is not part of the displayed entities.
+
+To control the availability of the buttons on the Object Page, both annotations can either be bound to a field that is part of the displayed entities per entity or to a field that is **not** part of the entities to control the visibility for all entities at once.
 
 ---
 

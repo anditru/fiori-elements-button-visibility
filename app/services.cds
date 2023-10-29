@@ -1,1 +1,1 @@
-using from './test-books/annotations.cds';
+using from './books/annotations.cds';
